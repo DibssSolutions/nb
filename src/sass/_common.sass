@@ -1,5 +1,28 @@
-body
-	background: #FFF
-	+css-lock(16, 50, 600, 1000)
-	line-height: 1.4
+.out
+	// position: relative
+	// overflow: hidden
+.wrap
+	// position: relative
+	background-color: $blue
+	position: absolute
+	left: 0
+	top: 0
+	right: 0
+	bottom: 0
+	overflow-x: hidden 
+	&:before
+		content: ''
+		position: absolute
+		top: 343px
+		// left: -50%
+		// right: -50%
+		width: 200%
+		height: 2400px
+		background-color: $darkblue
+		transform: rotate(27deg)
+		transform-origin: top left
 
+.in
+	max-width: 1020px
+	padding: 0 10px
+	margin: 0 auto  

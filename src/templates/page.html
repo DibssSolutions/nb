@@ -4,24 +4,13 @@ title: Index page
 {% extends "layouts/_layout.html" %}
 
 {% block content %}
+
+	<div class="wrap">
+		{% include "partials/_header.html" %}
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi cupiditate consequatur dolore. Vero delectus mollitia deserunt perferendis adipisci nesciunt repellendus non, obcaecati ipsam nostrum a soluta corporis at iusto deleniti id necessitatibus aliquid omnis, veritatis tempora? Iste minus, officiis ullam laborum. Amet atque maxime itaque sequi, sint voluptatem, quibusdam ut reiciendis nisi nesciunt ipsum, obcaecati placeat, quos cupiditate rem ex suscipit odio velit voluptatum! Consectetur, voluptatibus natus sequi incidunt. Veniam veritatis quod, commodi omnis neque adipisci labore consequuntur assumenda est distinctio, explicabo perspiciatis aperiam nisi sit voluptatum repellendus dolor. Aliquid itaque fugiat blanditiis doloremque corporis voluptate ex alias deleniti perspiciatis!</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos consequuntur doloremque ad, rem dolorum sit! Voluptate explicabo totam possimus quas exercitationem magnam, laborum, ab quia, recusandae saepe consectetur sequi iusto.</p>
+	</div>
 	
-	{# variable example #}
-	<h1>{{title}}</h1>
-
 	
-	{# partial example #}
-	{% include "partials/_header.html" %}
-
-	{# mixin example #}
-	{{mixins.icon('facebook')}}
-
-
-	{# data usage example #}
-		{% import "data/data.html" as tests %}
-		
-		{% for test in tests.list %}
-		<li>{{test.title}}</li>
-		{% endfor %}
-	{# end of example #}
 
 {% endblock %}
