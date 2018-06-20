@@ -14,15 +14,21 @@
     <!-- BEGIN content -->
     <div class="out">
       <div class="wrap">
+        <div class="wrap__cube-small"> <img src="img/box-small-blue.png" alt="cube"> </div>
+        <div class="wrap__cube-blur"> <img src="img/box-blur.png" alt="cube"> </div>
         <!-- begin header -->
         <div class="header">
           <div class="header__in in">
             <div class="header__wrap">
-              <div class="header__left">
-                <div class="header__logo"> <svg class="icon icon-logo"><use xlink:href="img/sprite.svg#icon-logo"></use></svg> </div>
-                <div class="header__logo-text"> Neurobot.trading </div>
+              <div class="header__left"> <a href="#" class="header__logo">
+<svg class="icon icon-logo"><use xlink:href="img/sprite.svg#icon-logo"></use></svg>
+</a>
+                <div class="header__logo-description">
+                  <div class="header__logo-text"> Neurobot.trading </div>
+                  <div class="header__logo-text header__logo-text_small"> Neural network forecasting </div>
+                </div>
               </div>
-              <div class="header__left">
+              <div class="header__right">
                 <div class="header__menu">
                   <ul class="menu">
                     <li class="menu__item"> <a href="#" class="menu__link">Forecasts</a> </li>
@@ -32,17 +38,95 @@
                   </ul>
                 </div>
                 <div class="header__button"> <button class="btn">Sing Up</button> </div>
-                <div class="header__lang lang"> <a href="#">Eng</a> <a href="#">Рус</a> </div>
+                <ul class="header__lang lang">
+                  <li class="lang__item"> <a href="#" class="lang__link">Eng</a> </li>
+                  <li class="lang__item"> <a href="#" class="lang__link">Рус</a> </li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
         <!-- end header -->
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi cupiditate consequatur dolore. Vero delectus mollitia deserunt perferendis adipisci nesciunt repellendus non, obcaecati ipsam nostrum a soluta corporis at iusto deleniti id necessitatibus
-          aliquid omnis, veritatis tempora? Iste minus, officiis ullam laborum. Amet atque maxime itaque sequi, sint voluptatem, quibusdam ut reiciendis nisi nesciunt ipsum, obcaecati placeat, quos cupiditate rem ex suscipit odio velit voluptatum! Consectetur,
-          voluptatibus natus sequi incidunt. Veniam veritatis quod, commodi omnis neque adipisci labore consequuntur assumenda est distinctio, explicabo perspiciatis aperiam nisi sit voluptatum repellendus dolor. Aliquid itaque fugiat blanditiis doloremque
-          corporis voluptate ex alias deleniti perspiciatis!</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos consequuntur doloremque ad, rem dolorum sit! Voluptate explicabo totam possimus quas exercitationem magnam, laborum, ab quia, recusandae saepe consectetur sequi iusto.</p>
+        <!-- begin hero -->
+        <div class="hero">
+          <div class="hero__in in">
+            <div class="hero__top">
+              <div class="hero__img"> <img src="img/robot.png" alt="robot"> </div>
+              <div class="hero__info">
+                <h1 class="hero__title title-lg">Forecasting Exchange Rates</h1>
+                <h3 class="hero__subtitle title-sm">of Cryptocurrencies by Neural Network Algorithm</h3>
+                <div class="hero__button"> <button class="button">Join Free For 3 Days</button> </div>
+              </div>
+            </div>
+          </div>
+          <div class="hero__video video">
+            <div class="video__content"></div>
+            <div class="video__btn"> <svg class="icon icon-play"><use xlink:href="img/sprite.svg#icon-play"></use></svg> </div>
+          </div>
+        </div>
+        <!-- end hero -->
+        <!-- begin forecasts -->
+        <div class="forecasts">
+          <div class="forecasts__in in">
+            <div class="forecasts__wrap">
+              <h2 class="forecasts__title title-md">Popular forecasts</h2>
+              <h4 class="forecasts__subtitle title-xs">The forecasts are updated every 30 minutes</h4>
+              <div class="forecasts__list">
+                <li class="forecasts__item"> <a href="#" class='forecasts__link'>BTC</a> </li>
+                <li class="forecasts__item"> <a href="#" class='forecasts__link'>LTC</a> </li>
+                <li class="forecasts__item"> <a href="#" class='forecasts__link'>ETH</a> </li>
+                <li class="forecasts__item"> <a href="#" class='forecasts__link'>XRP</a> </li>
+                <li class="forecasts__item"> <a href="#" class='forecasts__link'>DASH</a> </li>
+                <li class="forecasts__item"> <a href="#" class='forecasts__link'>XMR</a> </li>
+              </div>
+            </div>
+          </div>
+          <div class="forecasts__img"> <img src="img/forecast.png" alt="forecast"> </div>
+        </div>
+        <!-- end forecasts -->
+        <!-- begin how-it-works -->
+        <div class="how-it-works">
+          <div class="how-it-works__inner inner">
+            <div class="how-it-works__wrap">
+              <h2 class="how-it-works__title title-md title-md_darken">How it works?</h2>
+              <div class="how-it-works__content">
+                <div class="col col-50 col-sm-100">
+                  <div class="how-it-works__block">
+                    <div class="how-it-works__icon"> <img src="img/shape.svg" alt=""> </div>
+                    <div class="how-it-works__description"> The neural network collects and analyses data 24/7 and provides forecasts for various cryptocurrencies’ exchange rates. There are three types of forecasts: for 24 hours, for 48 hours and for one week. Depending on the type of forecast
+                      and the chosen cryptocurrency, the accuracy of the forecast spans within the range of 70-90%. </div>
+                  </div>
+                  <div class="how-it-works__block">
+                    <div class="how-it-works__icon"> <img src="img/shape.svg" alt=""> </div>
+                    <div class="how-it-works__description"> The analysis takes less than a second and comprises the essental aspects of technical analysis, such as technical analysis paterns and signal indicators. </div>
+                  </div>
+                  <div class="how-it-works__block">
+                    <div class="how-it-works__icon"> <img src="img/shape.svg" alt=""> </div>
+                    <div class="how-it-works__description"> The program will be further enriched by introducing the remaining elements of technical analysis (Fibonacci retracement, Elliot wave theory) and fundamental analysis, which will include news analysis to determine the positve and negatve
+                      tendencies of the market. </div>
+                  </div>
+                </div>
+                <div class="col col-50 col-sm-100">
+                  <div class="how-it-works__block">
+                    <div class="how-it-works__icon"> <img src="img/shape.svg" alt=""> </div>
+                    <div class="how-it-works__description"> The project is targeted at traders with any level of preparaton and experience. Traders no longer have to be aware of every miniscule detail of technical analysis, wastng tme and efort trying to make their skills and knowledge deeper
+                      and more specifc. It facilitates the work of professional traders, allows them to channel their strength into the realizaton of even more worthwhile and important projects and opens up possibilites for the newcomers, who are just
+                      entering the exchange trade, serving as a powerful and reliable aid in their actvity. </div>
+                  </div>
+                  <div class="how-it-works__block">
+                    <div class="how-it-works__icon"> <img src="img/shape.svg" alt=""> </div>
+                    <div class="how-it-works__description"> NeuroBot’s algorithm is based on LSTM-network (Long short-term memory) coupled with Gradient Boosting - another machine learning technique. </div>
+                  </div>
+                  <div class="how-it-works__block">
+                    <div class="how-it-works__icon"> <img src="img/shape.svg" alt=""> </div>
+                    <div class="how-it-works__description"> Thanks to the abilites of neural networks, NeuroBot is constantly learning to beter correspond to the state of the market, to make more accurate forecasts and improve the quality of the resultng work. </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end how-it-works -->
       </div>
     </div>
     <!-- END content -->

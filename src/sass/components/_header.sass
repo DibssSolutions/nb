@@ -1,0 +1,50 @@
+.header
+	padding: 65px 0
+	position: relative
+	z-index: 1 
+	&__wrap
+		+clr
+	&__left
+		float: left
+		display: flex
+		flex-wrap: wrap
+		align-items: center
+	&__right
+		float: right
+		display: flex
+		flex-wrap: wrap
+		align-items: flex-start
+	&__logo
+		margin-right: 10px
+		.icon-logo
+			fill: $white
+			font-size: 45px
+	&__menu
+		margin-right: 30px
+	&__button
+		margin-right: 8px
+	&__logo-text
+		font-size: 24px
+		font-weight: 600
+		color: $white
+		line-height: 1.2
+		&_small
+			font-size: 13px
+			font-weight: 500 
+
+.menu
+	font-size: 0
+	display: inline-block
+	&__item
+		display: inline-block
+		font-size: 16px
+		font-weight: 600
+		padding: 15px 0 
+		&:not(:last-child)
+			margin-right: 35px
+	&__link
+		color: $white
+		display: block
+		text-decoration: none
+		font-family: $montserrat 
+	

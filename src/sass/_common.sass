@@ -1,6 +1,10 @@
 .out
 	// position: relative
 	// overflow: hidden
+
+body
+	font-family: $montserrat
+
 .wrap
 	// position: relative
 	background-color: $blue
@@ -14,15 +18,114 @@
 		content: ''
 		position: absolute
 		top: 343px
-		// left: -50%
-		// right: -50%
-		width: 200%
-		height: 2400px
+		width: 550%
+		height: 167%
 		background-color: $darkblue
 		transform: rotate(27deg)
 		transform-origin: top left
+	&__cube-small
+		position: absolute
+		left: 6%
+		top: 26%
+	&__cube-blur
+		position: absolute
+		right: 9.5%
+		top: 39%
+		z-index: 5
 
 .in
-	max-width: 1020px
+	max-width: 1030px
+	padding: 0 15px
+	margin: 0 auto
+.inner
+	max-width: 1200px
+	margin: 0 auto
+	padding: 0 15px 
+
+.btn
+	border-radius: 15px
+	background-color: $white
+	color: $darkblue
+	padding: 14px 30px
+	font-size: 16px
+	font-weight: 600
+
+.lang
+	border-radius: 15px
+	background: $white
+	font-size: 16px
+	font-weight: 600
+	padding: 15px 25px
+	&__item:not(:last-child)
+		margin-bottom: 20px
+	&__link
+		display: inline-block
+		text-decoration: none
+		color: $darkblue
+		border-bottom: 1px solid transparent
+		&:hover
+			border-bottom: 1px solid $darkblue
+
+.title-lg
+	font-size: 72px
+	font-weight: 600
+	color: $white
+	line-height: 1.2
+
+.title-md
+	font-size: 60px
+	font-weight: 600
+	color: $white
+	line-height: 1.2
+	&_darken
+		color: $darkblue
+	+sm
+		font-size: 36px
+		text-align: center
+
+.title-sm
+	font-size: 30px
+	line-height: 1.6
+	font-weight: 600
+	color: $white
+
+.title-xs
+	font-size: 24px
+	font-weight: 600 
+	color: $white
+	line-height: 1.5 
+
+.button
+	border-radius: 20px
+	background-color: $darkblue
+	color: $white
+	font-size: 16px
+	font-weight: 400
+	padding: 18px 20px
+	min-width: 260px
+
+.col
+	float: left
 	padding: 0 10px
-	margin: 0 auto  
+	&-50
+		width: 50%
+	&-33
+		width: 33.3%
+	// &-lg-25
+	// 	+lg
+	// 		width: 25%
+	&-md-33
+		+md
+			width: 33%
+	&-md-50
+		+md
+			width: 50%
+	&-sm-33
+		+sm
+			width: 33.3%
+	&-sm-50
+		+sm
+			width: 50%
+	&-sm-100
+		+sm
+			width: 100%

@@ -1,0 +1,51 @@
+.forecasts
+	position: relative
+	padding: 80px 0 65px 
+	&__title
+		margin-bottom: 18px
+	&__subtitle
+		margin-bottom: 43px
+	&__list
+		font-size: 0
+		display: inline-block
+		margin-bottom: 41px
+		margin: 0 -15px 41px
+		+sm
+			margin: 0 -5px 
+	&__item
+		display: inline-block
+		font-weight: 700		
+		
+		
+		text-align: center
+		
+		transition: background-color 0.3s, border 0.3s
+		padding: 0 15px
+		+md
+			margin-bottom: 10px
+		+sm
+			padding: 0 5px 
+		// &:not(:last-child)
+		// 	margin-right: 30px
+		
+	&__link
+		padding: 20px 10px
+		display: block
+		font-size: 30px
+		color: $white
+		text-decoration: none
+		border-radius: 7px
+		border: 10px solid $cello
+		min-width: 140px
+		&:hover
+			background-color: $blue
+			border: 10px solid $blue
+			border-radius: 7px
+			cursor: pointer
+		+sm
+			min-width: 90px
+			font-size: 16px
+	&__img
+		img
+			display: block
+			max-width: 100% 

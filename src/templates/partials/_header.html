@@ -3,12 +3,18 @@
 	<div class="header__in in">
 		<div class="header__wrap">
 			<div class="header__left">
-				<div class="header__logo">{{mixins.icon('logo')}}</div>
-				<div class="header__logo-text">
-					Neurobot.trading
-				</div>
+				<a href="#" class="header__logo">{{mixins.icon('logo')}}</a>
+				<div class="header__logo-description">
+					<div class="header__logo-text">
+						Neurobot.trading
+					</div>
+					<div class="header__logo-text header__logo-text_small">
+						Neural network forecasting
+					</div>
+				</div>	
+				
 			</div>
-			<div class="header__left">
+			<div class="header__right">
 				<div class="header__menu">
 					<ul class="menu">
 						<li class="menu__item">
@@ -28,13 +34,16 @@
 				<div class="header__button">
 					<button class="btn">Sing Up</button>
 				</div>
-				<div class="header__lang lang">
-					<a href="#">Eng</a>
-					<a href="#">Рус</a>		
-				</div>	
+				<ul class="header__lang lang">
+					<li class="lang__item">
+						<a href="#" class="lang__link">Eng</a>
+					</li>
+					<li class="lang__item">
+						<a href="#" class="lang__link">Рус</a>	
+					</li>		
+				</ul>	
 			</div>
-		</div>
-		
+		</div>		
 	</div>	
 </div>
 <!-- end header -->
