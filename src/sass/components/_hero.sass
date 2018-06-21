@@ -1,5 +1,24 @@
 .hero
-	padding: 35px 0 80px
+	position: relative
+	&:before
+		content: ''
+		position: absolute
+		top: 180px
+		width: 550%
+		height: 167%
+		background-color: $darkblue
+		transform: rotate(27deg)
+		transform-origin: top left
+		padding: 35px 0 80px
+	&__cube-small
+		position: absolute
+		left: 7%
+		top: 16%
+	&__cube-blur
+		position: absolute
+		right: 10%
+		top: 22%
+		z-index: 1
 	&__top
 		position: relative
 		+clr
@@ -17,10 +36,9 @@
 		text-align: center
 	&__button
 		margin-top: 30px
-	&__video
-		margin: 207px auto 0
-		max-width: 1210px
-		padding: 0 20px
+	&__in-lg
+		margin-top: 207px
+
 .video
 	position: relative
 	&__content

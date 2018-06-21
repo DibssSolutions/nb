@@ -1,43 +1,17 @@
-.out
-	// position: relative
-	// overflow: hidden
-
 body
 	font-family: $montserrat
 
-.wrap
-	// position: relative
+.out
 	background-color: $blue
-	position: absolute
-	left: 0
-	top: 0
-	right: 0
-	bottom: 0
-	overflow-x: hidden 
-	&:before
-		content: ''
-		position: absolute
-		top: 343px
-		width: 550%
-		height: 167%
-		background-color: $darkblue
-		transform: rotate(27deg)
-		transform-origin: top left
-	&__cube-small
-		position: absolute
-		left: 6%
-		top: 26%
-	&__cube-blur
-		position: absolute
-		right: 9.5%
-		top: 39%
-		z-index: 5
+	overflow: hidden
 
 .in
 	max-width: 1030px
 	padding: 0 15px
 	margin: 0 auto
-.inner
+	position: relative
+
+.in-lg
 	max-width: 1200px
 	margin: 0 auto
 	padding: 0 15px 
@@ -100,13 +74,17 @@ body
 	background-color: $darkblue
 	color: $white
 	font-size: 16px
-	font-weight: 400
+	font-weight: 600
 	padding: 18px 20px
-	min-width: 260px
+	min-width: 320px
+	font-family: $montserrat
+
 
 .col
 	float: left
-	padding: 0 10px
+	padding: 0 30px
+	+sm
+		padding: 0 15px 
 	&-50
 		width: 50%
 	&-33

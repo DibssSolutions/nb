@@ -1,3 +1,6 @@
-import sayHello from './lib/sayHello.js';
 
-sayHello();
+import Rellax from 'rellax';
+$(document).ready(function() {
+  var rellax = new Rellax('.rellax');
+});
+

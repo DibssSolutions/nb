@@ -5,18 +5,11 @@ title: Index page
 
 {% block content %}
 
-	<div class="wrap">
-		<div class="wrap__cube-small">
-			<img src="img/box-small-blue.png" alt="cube">
-		</div>
-		<div class="wrap__cube-blur">
-			<img src="img/box-blur.png" alt="cube">
-		</div>
 		{% include "partials/_header.html" %}
 		{% include "partials/_hero.html" %}
 		{% include "partials/_forecasts.html" %}
 		{% include "partials/_how-it-works.html" %}
-
-	</div>	
+		{% include "partials/_news.html" %}
+		
 
 {% endblock %}
