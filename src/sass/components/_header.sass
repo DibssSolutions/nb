@@ -19,32 +19,73 @@
 		.icon-logo
 			fill: $white
 			font-size: 45px
+			+md
+				font-size: 35px
 	&__menu
 		margin-right: 30px
+		+sm
+			position: absolute
+			opacity: 0
+			// left: 0
+			right: 0
+			width: 200px
+			text-align: center
+			// height: 100vh
+			transform: translateX(200px)
+			visibility: hidden
+			background: $blue 
+			margin-right: 0
+			top: 20px
+			transition: opacity 0.5s, transform 0.5s
+		.is-open &
+			opacity: 1
+			visibility: visible
+			transform: translateY(0)
+			
+			
 	&__button
 		margin-right: 8px
+		+sm
+			display: none
 	&__logo-text
 		font-size: 24px
 		font-weight: 600
 		color: $white
 		line-height: 1.2
+		+md
+			font-size: 18px 
 		&_small
 			font-size: 13px
-			font-weight: 500 
+			font-weight: 500
+			+md
+				font-size: 10px
+	&__logo-blue
+		color: $malibu
+	&__lang
+		display: none
 
 .menu
 	font-size: 0
 	display: inline-block
+	+sm
+		padding: 10px 20px
 	&__item
 		display: inline-block
-		font-size: 16px
-		font-weight: 600
 		padding: 15px 0 
 		&:not(:last-child)
 			margin-right: 35px
+			+md
+				margin-right: 20px
+			+sm
+				display: block
+				margin-right: 0
 	&__link
 		color: $white
 		display: block
+		font-size: 16px
+		font-weight: 600
 		text-decoration: none
-		font-family: $montserrat 
+		font-family: $montserrat
+		+md
+			font-size: 14px
 	

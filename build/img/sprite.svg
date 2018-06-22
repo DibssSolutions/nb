@@ -4,9 +4,16 @@
         </style>
     
         <style>
+            .cls-1{fill:#fff;fill-rule:evenodd}
+        </style>
+    
+        <style>
             .cls-1{fill:#00bdca;fill-rule:evenodd}
         </style>
-    </defs><symbol id="icon-facebook" viewBox="0 0 10 19">
+    </defs><symbol id="icon-arrow-bottom" viewBox="0 0 15.969 10">
+    
+    <path id="Rounded_Rectangle_20" data-name="Rounded Rectangle 20" class="cls-1" d="M485.22 5066.27l1.037-1.06a.726.726 0 0 1 1.036 0l7.257 7.43a.762.762 0 0 1 0 1.06l-1.036 1.06a.71.71 0 0 1-1.037 0l-7.257-7.42a.772.772 0 0 1 0-1.07zm6.22 6.37l7.257-7.43a.727.727 0 0 1 1.037 0l1.037 1.06a.774.774 0 0 1 0 1.07l-7.257 7.42a.71.71 0 0 1-1.037 0l-1.037-1.06a.762.762 0 0 1 0-1.06z" transform="translate(-485.031 -5065)"/>
+</symbol><symbol id="icon-facebook" viewBox="0 0 10 19">
     <title>
         facebook
     </title>

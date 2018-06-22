@@ -1,3 +1,4 @@
+import './components/header-menu.js';
 
 import Rellax from 'rellax';
 $(document).ready(function() {
