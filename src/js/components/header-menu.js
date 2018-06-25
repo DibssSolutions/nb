@@ -11,5 +11,4 @@ btnNav.click(function() {
     header.removeClass('is-open');
     body.removeClass('is-open');
   }
- 
 });

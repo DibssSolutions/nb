@@ -8,15 +8,18 @@ body
 	overflow: hidden
 
 .in
-	max-width: 1030px
+	max-width: 1002px
 	padding: 0 15px
 	margin: 0 auto
 	position: relative
 
 .in-lg
-	max-width: 1200px
+	max-width: 1230px
 	margin: 0 auto
-	padding: 0 15px
+	padding: 0 30px
+	position: relative
+	+sm
+		padding: 0 5px 
 
 .btn-nav
 	position: absolute
@@ -86,8 +89,12 @@ body
 	font-weight: 600
 	color: $white
 	line-height: 1.2
+	+md
+		font-size: 48px
 	&_darken
 		color: $darkblue
+	span
+		font-weight: 200 
 
 .title-md
 	font-size: 60px
@@ -102,7 +109,7 @@ body
 
 .title-sm
 	font-size: 30px
-	line-height: 1.6
+	line-height: 1.5
 	font-weight: 600
 	color: $white
 
@@ -113,21 +120,35 @@ body
 	line-height: 1.5 
 
 .button
-	border-radius: 20px
+	border-radius: 40px
 	background-color: $darkblue
 	color: $white
 	font-size: 16px
 	font-weight: 600
-	padding: 18px 20px
+	padding: 21px 20px
 	min-width: 320px
 	font-family: $montserrat
-
+	&__value
+		margin-left: 11px
+		display: inline-block
+		vertical-align: middle
+		font-size: 18px
+	&__icon
+		display: inline-block
+		vertical-align: middle
+	&_big
+		min-width: 374px
+	&_white
+		background-color: $white 
+		color: $darkblue
+	.icon-paper-plane
+		font-size: 23px
 
 .col
 	float: left
 	padding: 0 30px
 	+sm
-		padding: 0 15px 
+		padding: 0 10px 
 	&-50
 		width: 50%
 	&-33

@@ -1,14 +1,17 @@
 .hero
 	position: relative
+	padding-top: 55px
 	&:before
 		content: ''
 		position: absolute
-		top: 180px
+		top: 67%
 		width: 550%
-		height: 167%
+		height: 153%
 		background-color: $darkblue
-		transform: rotate(27deg)
-		transform-origin: top left
+		transform: rotate(30deg)
+		transform-origin: center center
+		left: 50%
+		transform: translateX(-50%) rotate(30deg)
 		padding: 35px 0 80px
 	&__cube-small
 		position: absolute
@@ -24,20 +27,46 @@
 		+clr
 	&__img
 		position: absolute
-		top: -56%
-		left: -20%
-		img
+		top: -104.5%
+		left: -5%
+		z-index: 2
+		+md
+			max-width: 802px
+			top: -76%
+			left: -4%
+			img
+				+md
+					display: block
+					max-width: 100%
+		+sm
+			display: none
+			img
+				display: block
+				max-width: 100%
+	&__img-mob
+		position: absolute
+		left: 0
+		top: -59.7%
+		display: none
+		z-index: 2
+		+sm
 			display: block
-			max-width: 100% 
+		img
+			+sm
+				max-width: 100%
+				display: block
 	&__info
 		float: right
 		position: relative
 		max-width: 600px
 		text-align: center
+	&__title
+		margin-bottom: 13px 
 	&__button
-		margin-top: 30px
+		margin-top: 25px
 	&__in-lg
-		margin-top: 207px
+		margin-top: 211px
+		position: relative
 
 .video
 	position: relative

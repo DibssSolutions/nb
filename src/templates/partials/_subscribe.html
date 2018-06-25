@@ -1,0 +1,45 @@
+{% set
+list = [
+	{
+		value: "Telegram bot"
+	},
+	{
+		value: "Telegram group"
+	},
+	{
+		value: "Telegram channel"
+	}
+]
+%}
+<!-- begin subscribe -->
+<div class="subscribe">
+	<div class="subscribe__in in">
+		<div class="subscribe__content">
+			<div class="subscribe__block-btn">
+				{% for item in list %}
+				<div class="subscribe__button">
+					<button class="button button_big button_white">
+						<span class="button__icon">
+							{{mixins.icon('paper-plane')}}
+						</span>
+						<span class="button__value">{{item.value}}</span>				
+					</button>
+				</div>
+				{% endfor %}
+				<a href="#" class="subscribe__email">
+					support@neurobot.trading
+				</a>
+			</div>
+			<div class="subscribe__news">
+				<h2 class="subscribe__title title-md">Subscribe to our news</h2>
+				<div class="subscribe__form">
+					<input type="email" placeholder="e-mail">
+				</div>
+				<div class="subscribe__button-subscr">
+					<button class="button button_big">Subscribe</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- end subscribe -->

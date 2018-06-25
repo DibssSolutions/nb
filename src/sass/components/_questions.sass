@@ -1,21 +1,55 @@
 .questions
 	&__wrap
 		background-color: $white
-		padding: 90px 40px 125px
-		border-radius: 12px  
-
+		padding: 81px 95px 125px
+		border-radius: 12px
+		+md
+			padding: 50px 36px 
+	&__title
+		max-width: 655px
+		margin-bottom: 53px 
+		line-height: 1
+	&__cube-small
+		position: absolute
+		top: 10%
+		left: -5%
+		+md
+			left: 82%
+			top: -8%
+		+sm
+			left: -16%
 .accordion
 	&__title
 		font-size: 30px
 		font-weight: 600
 		color: $darkblue
+		line-height: 1.5
+		margin-bottom: 16px
+		+md
+			font-size: 24px
 	&__block
 		display: flex
-		margin-bottom: 40px
+		&:not(:last-child)
+			margin-bottom: 26px 
+		// &.is-active
+		// 	.accordion__hide-text
+		// 		display: block
 	&__button
 		margin-right: 20px
 		width: 35px
 		height: 35px
 		border-radius: 50%
 		position: relative
-			 
+		transform: rotate(-90deg)
+		transition: transform 0.3s
+		background: url(../img/arrow.png) $blue no-repeat center center
+		.is-active.accordion__block &
+			transform: rotate(0deg)		
+	&__hide-text
+		line-height: 2
+		font-size: 18px
+		font-weight: 200
+		display: none
+		// .is-active.accordion__block &
+		// 	display: block
+			
