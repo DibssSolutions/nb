@@ -35,10 +35,11 @@
                 </ul>
               </div>
               <div class="header__button"> <button class="btn">Sing Up</button> </div>
-              <ul class="header__lang lang">
-                <li class="lang__item"> <a href="#" class="lang__link">Eng</a> </li>
-                <li class="lang__item"> <a href="#" class="lang__link">Рус</a> </li>
-              </ul>
+              <div class="header__lang lang"> <a href="#" class="lang__title">Eng</a>
+                <ul class="lang__list">
+                  <li class="lang__item"> <a href="#" class="lang__link">Рус</a> </li>
+                </ul>
+              </div>
             </div> <button class="btn-nav js-btn-nav">
 				<span></span>
 				<span></span>
@@ -61,8 +62,8 @@
           </div>
         </div>
         <div class="hero__in-lg in-lg">
-          <div class="hero__img" style> <img src="img/robot.png" alt="robot"> </div>
-          <div class="hero__img-mob" style> <img src="img/robot-mob.png" alt="robot"> </div>
+          <div class="hero__img"> <img src="img/robot.png" alt="robot"> </div>
+          <div class="hero__img-mob"> <img src="img/robot-mob.png" alt="robot"> </div>
           <div class="hero__video video">
             <div class="video__content"></div>
             <div class="video__btn"> <svg class="icon icon-play"><use xlink:href="img/sprite.svg#icon-play"></use></svg> </div>
@@ -225,6 +226,8 @@
       <!-- begin subscribe -->
       <div class="subscribe">
         <div class="subscribe__in in">
+          <div class="subscribe__cube-small"> <img src='img/box-small-blue.png' alt="cube" /> </div>
+          <div class="subscribe__cube-dark"> <img src="img/box-dark-average.png" alt="cube"> </div>
           <div class="subscribe__content">
             <div class="subscribe__block-btn">
               <div class="subscribe__button"> <button class="button button_big button_white">
@@ -254,14 +257,37 @@
 					support@neurobot.trading
 				</a> </div>
             <div class="subscribe__news">
-              <h2 class="subscribe__title title-md">Subscribe to our news</h2>
-              <div class="subscribe__form"> <input type="email" placeholder="e-mail"> </div>
+              <h2 class="subscribe__title title-md">Subscribe <span> to our news</span></h2>
+              <div class="subscribe__form"> <input type="email" placeholder="e-mail" class="input"> </div>
               <div class="subscribe__button-subscr"> <button class="button button_big">Subscribe</button> </div>
             </div>
           </div>
         </div>
       </div>
       <!-- end subscribe -->
+      <!-- begin footer -->
+      <div class="footer">
+        <div class="footer__in in">
+          <div class="footer__soc-icons"> <a href="#" class="footer__icon">						
+<svg class="icon icon-facebook-footer"><use xlink:href="img/sprite.svg#icon-facebook-footer"></use></svg>
+
+			</a> <a href="#" class="footer__icon">
+				
+<svg class="icon icon-instagram"><use xlink:href="img/sprite.svg#icon-instagram"></use></svg>
+
+			</a> <a href="#" class="footer__icon">
+				
+<svg class="icon icon-play-footer"><use xlink:href="img/sprite.svg#icon-play-footer"></use></svg>
+
+			</a> <a href="#" class="footer__icon">
+				
+<svg class="icon icon-wk"><use xlink:href="img/sprite.svg#icon-wk"></use></svg>
+
+			</a> </div>
+          <div class="footer__list"> <span class="footer__item">Cookies</span> <span class="footer__item">Privacy Policy</span> </div>
+        </div>
+      </div>
+      <!-- end footer -->
     </div>
     <!-- END content -->
     <!-- BEGIN scripts -->

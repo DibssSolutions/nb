@@ -14,6 +14,12 @@ list = [
 <!-- begin subscribe -->
 <div class="subscribe">
 	<div class="subscribe__in in">
+		<div class="subscribe__cube-small">
+			<img src='img/box-small-blue.png' alt="cube"/>
+		</div>
+		<div class="subscribe__cube-dark">
+			<img src="img/box-dark-average.png" alt="cube">
+		</div>
 		<div class="subscribe__content">
 			<div class="subscribe__block-btn">
 				{% for item in list %}
@@ -31,9 +37,9 @@ list = [
 				</a>
 			</div>
 			<div class="subscribe__news">
-				<h2 class="subscribe__title title-md">Subscribe to our news</h2>
+				<h2 class="subscribe__title title-md">Subscribe <span> to our news</span></h2>
 				<div class="subscribe__form">
-					<input type="email" placeholder="e-mail">
+					<input type="email" placeholder="e-mail" class="input">
 				</div>
 				<div class="subscribe__button-subscr">
 					<button class="button button_big">Subscribe</button>

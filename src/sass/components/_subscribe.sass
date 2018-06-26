@@ -1,14 +1,61 @@
 .subscribe
 	padding-top: 165px
+	position: relative
+	&:after
+		content: ''
+		position: absolute
+		background: $darkblue 
+		width: 100%
+		// left: -80% 
+		height: 700%
+		top: 237px
+		transform: rotate(30deg)
+		transform-origin: top left
+	&__in
+		position: relative
 	&__content
 		display: flex
 		justify-content: space-between
+		position: relative
+		z-index: 10
 	&__block-btn
 		padding-top: 70px
+		text-align: center
 	&__button
-		margin-bottom: 25px
+		margin-bottom: 19px
 	&__news
-		border: 16px solid $white
+		border: 16px solid $malibu
 		border-radius: 10px
-		padding: 45px 50px 50px
+		padding: 37px 50px 50px
 		max-width: 502px
+	&__button-subscr
+		margin-top: 48px
+	&__title
+		margin-bottom: 8px
+		span
+			font-weight: 200
+	&__email
+		color: $white
+		font-size: 18px
+		font-weight: 600
+	&__cube-small
+		position: absolute
+		right: -29%
+		top: -14%
+	&__cube-dark
+		position: absolute
+		left: -35%
+		top: 21%
+		z-index: 10
+		
+
+.input
+	background-color: transparent
+	padding: 20px 10px
+	border-bottom: 2px solid $pictonBlue
+	width: 100%
+	color: white
+	+placeholder
+		color: white
+		font-size: 24px
+		font-weight: 600
