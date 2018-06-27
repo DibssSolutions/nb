@@ -1,6 +1,8 @@
 .hero
 	position: relative
 	padding-top: 55px
+	+md
+		padding-top: 30px
 	&:before
 		content: ''
 		position: absolute
@@ -13,14 +15,16 @@
 		left: 50%
 		transform: translateX(-50%) rotate(30deg)
 		padding: 35px 0 80px
+	&__in
+		position: relative
 	&__cube-small
 		position: absolute
-		left: 7%
-		top: 16%
+		left: -32%
+		top: 48%
 	&__cube-blur
 		position: absolute
-		right: 10%
-		top: 22%
+		right: -25%
+		top: 77%
 		z-index: 1
 	&__top
 		position: relative
@@ -56,6 +60,8 @@
 		position: relative
 		max-width: 600px
 		text-align: center
+		+md
+			max-width: 440px
 	&__title
 		margin-bottom: 13px 
 	&__button
@@ -63,6 +69,8 @@
 	&__in-lg
 		margin-top: 211px
 		position: relative
+		+md
+			margin-top: 165px
 
 .video
 	position: relative

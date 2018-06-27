@@ -1,0 +1,118 @@
+.roadmap
+	&__in
+		position: relative
+	&__date
+		font-size: 48px
+		font-weight: 600
+		color: $white
+		margin-bottom: 156px
+		line-height: 1
+	&__content
+		position: relative
+	&__paths
+		position: absolute
+		width: 585px
+		left: 50%
+		top: -237px
+		z-index: 5
+		transform: translateX(-50%)
+	&__row
+		+clr
+		position: relative
+		&_right .roadmap__box
+			float: right
+			max-width: 450px
+			min-height: 380px 
+		&_left .roadmap__box
+			float: left
+			max-width: 438px
+			min-height: 380px
+	&__block:nth-child(even)
+		+sm
+			.roadmap__box
+				float: right
+				// margin-right: 90px
+	&__block:nth-child(odd)
+		+sm
+			.roadmap__box
+				float: left
+				// margin-left: 90px
+.path1
+	&__box
+		position: absolute
+		top: -121px
+		right: -10px
+	&__ellipse
+		position: absolute
+		top: 131px
+		left: 258px
+.path2
+	position: relative
+	+clr
+	&__img
+		width: 50%
+		float: right
+		margin-top: -8px
+	&__box
+		position: absolute
+		top: -5px
+		left: 392px
+.path3
+	position: relative
+	&__img
+		transform: rotate(-180deg)
+		width: 50%
+		margin-top: -16px
+.path4
+	position: relative
+	+clr
+	&__img
+		width: 50%
+		float: right
+		margin-top: -9px 
+
+.path5
+	position: relative
+	+clr
+	&__img
+		transform: rotate(-180deg)
+		width: 50%
+		margin-top: -16px
+	&__box
+		position: absolute
+		left: 80px
+		top: 24px
+
+.path6
+	position: relative
+	+clr
+	&__img
+		width: 50%
+		float: right
+		margin-top: -8px 
+
+.box
+	display: flex
+	&__title
+		font-size: 36px
+		font-weight: 600
+		color: $white
+	&__description
+		font-size: 18px
+		font-weight: 200
+		color: $white
+		line-height: 2
+	&__icon
+		margin-right: 23px
+		.icon-wave
+			font-size: 53px
+			fill: $white	
+
+.ellipse
+	&__date
+		position: absolute
+		left: 50%
+		top: 50%
+		transform: translate(-50%, -50%)
+		text-align: center
+		

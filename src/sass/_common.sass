@@ -68,22 +68,33 @@ body
 
 .lang
 	border-radius: 20px
-	// background: $white
 	font-size: 16px
 	font-weight: 600
 	padding: 15px 25px
+	&:hover
+		background: $white
+	&:hover .lang__title
+		color: $darkblue
+	&:hover .lang__list
+		opacity: 1
+		visibility: visible
+	&:hover .lang__link
+		color: $darkblue
 	+md
 		font-size: 14px
+		padding: 10px 25px 
 	&__title
 		color: $white
 		text-decoration: none
 	&__list
-		display: none
+		opacity: 0
+		visibility: hidden
+		margin-top: 20px
 	&__link
 		display: inline-block
 		text-decoration: none
 		// color: $darkblue
-		color: $white
+		color: $darkblue
 		border-bottom: 1px solid transparent
 		&:hover
 			border-bottom: 1px solid $darkblue
@@ -116,6 +127,8 @@ body
 	line-height: 1.5
 	font-weight: 600
 	color: $white
+	+md
+		font-size: 18px
 
 .title-xs
 	font-size: 24px
